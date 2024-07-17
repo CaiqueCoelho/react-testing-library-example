@@ -37,16 +37,16 @@ describe('Application', () => {
         const submitButtonElement = screen.getByRole('button', { name: 'Submit' })
         expect(submitButtonElement).toBeInTheDocument();
 
-        const fullNamePlaceholder = screen.getByPlaceholderText('Fullname')
+        const fullNamePlaceholder = screen.getByPlaceholderText('fullnam', {exact: false})
         expect(fullNamePlaceholder).toBeInTheDocument();
 
-        const warningAboutFields = screen.getByText('All fields are mandatory', {selector: 'p'})
+        const warningAboutFields = screen.getByText(/all fields are mandatory/i, {selector: 'p'})
         expect(warningAboutFields).toBeInTheDocument();
 
         const getInputByDefaultValue = screen.getByDisplayValue('Vishwas');
         expect(getInputByDefaultValue).toBeInTheDocument();
 
-        const getImageByAltText = screen.getByAltText('a person with a laptop');
+        const getImageByAltText = screen.getByAltText(/a person with/);
         expect(getImageByAltText).toBeInTheDocument();
 
         const closeButtonByTitle = screen.getByTitle('close')

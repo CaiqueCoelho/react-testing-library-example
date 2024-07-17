@@ -18,12 +18,12 @@ describe('Counter', () => {
     expect(countValue.textContent).toBe('51');
   });
 
-  it('Count should increment by 1 if the increment button is clicked using userEvent', () => {
+  it('Count should increment by 1 if the increment button is clicked using userEvent', async () => {
     render(<Counter initialCount={50} />);
     const countValue = screen.getByTestId('count');
     expect(countValue.textContent).toBe('50');
     const incrementButton = screen.getByRole('button', { name: 'Increment' });
-    userEvent.click(incrementButton);
+    await userEvent.click(incrementButton);
     expect(countValue.textContent).toBe('51');
   });
 });

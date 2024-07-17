@@ -3,17 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.8.3",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.9.3",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
+    "jest-environment-jsdom": "^29.7.0",
     "jest-fetch-mock": "^3.0.3",
-    "react": "^17.0.2",
+    "react": "^18.3.1",
     "react-bootstrap": "^1.6.1",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
     "react-scripts": "^5.0.1",
+    "undici": "^6.19.2",
+    "util": "^0.12.5",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
@@ -51,5 +61,8 @@
         "statements": 80
       }
     }
+  },
+  "devDependencies": {
+    "msw": "^1.3.3"
   }
 }

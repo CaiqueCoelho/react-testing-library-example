@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+        "@mui/material": ["node_modules/@mui/material"],
+        "@mui/material/*": ["node_modules/@mui/material/*"]
+      },
+      "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+  },
+  "include": [
+    "src"
+  ]
+}
