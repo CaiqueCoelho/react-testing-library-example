@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../../components/Header/Header";
-import { Container } from "react-bootstrap";
-import Todo from "../../components/Todo/Todo";
+import React from 'react'
+import Header from '../../components/Header/Header'
+import { Container } from 'react-bootstrap'
+import Todo from '../../components/Todo/Todo'
 
 export default function TodoPage() {
   return (
@@ -10,5 +10,5 @@ export default function TodoPage() {
         <Todo />
       </Container>
     </div>
-  );
+  )
 }

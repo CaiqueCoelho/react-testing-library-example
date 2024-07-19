@@ -1,27 +1,27 @@
-import React from "react";
-import TodoFooter from "../TodoFooter/TodoFooter";
-import "./TodoList.css";
+import React from 'react'
+import TodoFooter from '../TodoFooter/TodoFooter'
+import './TodoList.css'
 
 function TodoList({ todos, setTodos }) {
   const updateTask = (id) => {
     let updatedTasks = todos.map((todo) => {
       if (todo.id === id) {
-        todo.completed = !todo.completed;
-        return todo;
+        todo.completed = !todo.completed
+        return todo
       } else {
-        return todo;
+        return todo
       }
-    });
-    setTodos(updatedTasks);
-  };
+    })
+    setTodos(updatedTasks)
+  }
 
   const calcNumberOfIncompletedTasks = () => {
-    let count = 0;
+    let count = 0
     todos.forEach((todo) => {
-      if (!todo.completed) count++;
-    });
-    return count;
-  };
+      if (!todo.completed) count++
+    })
+    return count
+  }
 
   return (
     <div className="todolist-container">
@@ -30,7 +30,7 @@ function TodoList({ todos, setTodos }) {
           {todos.map((todo, index) => (
             <div
               key={index}
-              className={`todo-item ${todo.completed && "todo-item-active"}`}
+              className={`todo-item ${todo.completed && 'todo-item-active'}`}
               onClick={() => updateTask(todo.id)}
             >
               {todo.task}
@@ -42,7 +42,7 @@ function TodoList({ todos, setTodos }) {
         <TodoFooter numberOfIncompleteTasks={calcNumberOfIncompletedTasks()} />
       </div>
     </div>
-  );
+  )
 }
 
-export default TodoList;
+export default TodoList

@@ -10,13 +10,7 @@ export const Application = () => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Fullname"
-            value="Vishwas"
-            onChange={() => {}}
-          />
+          <input type="text" id="name" placeholder="Fullname" value="Vishwas" onChange={() => {}} />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
@@ -35,12 +29,11 @@ export const Application = () => {
         </div>
         <div>
           <label>
-            <input type="checkbox" id="terms" /> I agree to the terms and
-            conditions
+            <input type="checkbox" id="terms" /> I agree to the terms and conditions
           </label>
         </div>
         <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import "./Header.css";
+import React from 'react'
+import './Header.css'
 
 export default function Header({ title }) {
   return (
@@ -9,5 +9,5 @@ export default function Header({ title }) {
       </h1>
       {/* <h3 data-testid="header-2" className="header">Hello</h3> */}
     </>
-  );
+  )
 }

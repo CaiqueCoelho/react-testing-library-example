@@ -1,6 +1,6 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import Followers from "../../components/Followers/Followers";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import Followers from '../../components/Followers/Followers'
 
 export default function FollowersPage() {
   return (
@@ -9,5 +9,5 @@ export default function FollowersPage() {
         <Followers />
       </Container>
     </div>
-  );
+  )
 }

@@ -6,7 +6,7 @@
       rgba(53, 201, 157, 0.794),
       rgba(32, 155, 212, 0.794)
     ),
-    url("../../assets/images/mountain.jpg");
+    url('../../assets/images/mountain.jpg');
   background-position: center;
 }
 

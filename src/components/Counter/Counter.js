@@ -1,24 +1,24 @@
-import React from "react";
-import { useState } from "react";
+import React from 'react'
+import { useState } from 'react'
 
 export default function Counter({ initialCount }) {
-  const [count, setCount] = useState(initialCount);
+  const [count, setCount] = useState(initialCount)
 
   const increment = () => {
-    setCount(count + 1);
-  };
+    setCount(count + 1)
+  }
 
   const decrement = () => {
-    setCount(count - 1);
-  };
+    setCount(count - 1)
+  }
 
   const reset = () => {
-    setCount(0);
-  };
+    setCount(0)
+  }
 
   const switchSigns = () => {
-    setCount(count * -1);
-  };
+    setCount(count * -1)
+  }
 
   return (
     <div>
@@ -31,5 +31,5 @@ export default function Counter({ initialCount }) {
       <button onClick={reset}>Reset</button>
       <button onClick={switchSigns}>Switch Signs</button>
     </div>
-  );
+  )
 }

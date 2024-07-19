@@ -1,17 +1,17 @@
-import "@testing-library/jest-dom";
-import fetchMock from "jest-fetch-mock";
-import { server } from "./mocks/node";
+import '@testing-library/jest-dom'
+import fetchMock from 'jest-fetch-mock'
+import { server } from './mocks/node'
 
 beforeAll(() => {
-  server.listen();
-});
+  server.listen()
+})
 
 afterEach(() => {
-  server.resetHandlers();
-});
+  server.resetHandlers()
+})
 
 afterAll(() => {
-  server.close();
-});
+  server.close()
+})
 
-fetchMock.enableMocks();
+fetchMock.enableMocks()
