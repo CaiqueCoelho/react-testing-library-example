@@ -1,6 +1,6 @@
-import '@testing-library/jest-dom';
-import fetchMock from 'jest-fetch-mock';
-import { server } from './mocks/node';
+import "@testing-library/jest-dom";
+import fetchMock from "jest-fetch-mock";
+import { server } from "./mocks/node";
 
 beforeAll(() => {
   server.listen();
