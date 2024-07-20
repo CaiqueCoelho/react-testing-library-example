@@ -31,13 +31,13 @@ test('login button should be rendered', () => {
 test('username input should be empry', () => {
   render(<Login />)
   const usernameInput = screen.getByPlaceholderText(/username/i)
-  expect(usernameInput.textContent).toBe('')
+  expect(usernameInput).toHaveTextContent('')
 })
 
 test('password input should be empry', () => {
   render(<Login />)
   const passwordInput = screen.getByPlaceholderText(/password/i)
-  expect(passwordInput.textContent).toBe('')
+  expect(passwordInput).toHaveTextContent('')
 })
 
 test('login button should be disabled if we dont have password and username', () => {
@@ -76,7 +76,7 @@ test('login button should not be disabled when we have password and username', (
   fireEvent.change(usernameInput, { target: { value: testValue } })
   fireEvent.change(passwordInput, { target: { value: testValue } })
   const loginButton = screen.getByRole('button')
-  expect(loginButton).not.toBeDisabled()
+  expect(loginButton).toBeEnabled()
 })
 
 test('loading should not be rendered on the first render', () => {
